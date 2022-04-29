@@ -95,6 +95,10 @@ aside {
     outline: none;
 }
 
+.tools input:focus {
+    border: 1px solid rgb(127, 86, 221);
+}
+
 .tool button {
     padding: 8px 10px;
     margin: 0 3px;
@@ -172,6 +176,13 @@ aside {
     padding-bottom: 25px;
     border: 1px solid #e5f2fa;
     background-color: #f0f9ff;
+    transition: all ease-in .7s;
+}
+
+.content-info li:hover {
+    background-color: rgb(52, 124, 124);
+    transition: all ease-in-out .2s;
+    color: #fff;
 }
 
 .content-info ul li span {
