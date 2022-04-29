@@ -51,14 +51,14 @@ aside {
 }
 
 .navbar li {
-    padding-bottom: 47px;
+    margin-bottom: 47px;
     display: flex;
     align-items: flex-start;
     font-weight: bold;
 }
 
 .navbar li:first-child {
-    padding-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 .navbar li i {
@@ -135,6 +135,12 @@ section {
     margin-right: 5px;
     margin-bottom: 11px;
     text-align: center;
+    transition: all ease-in .3s;
+}
+
+.content-item:hover {
+    box-shadow: 1px 1px 5px 3px #d6c7c7, 15px 6px 20px #fff;
+    transition: all ease-out .3s;
 }
 
 .color {
