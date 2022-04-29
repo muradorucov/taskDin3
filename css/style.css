@@ -24,6 +24,12 @@ ul {
     display: flex;
 }
 
+.navbar li:hover,
+.tool button:hover,
+.header p:hover {
+    cursor: pointer;
+}
+
 .container {
     border-bottom: 1px solid rgb(221, 216, 216);
 }
