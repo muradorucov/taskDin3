@@ -16,21 +16,16 @@ ul {
     list-style-type: none;
 }
 
-.container {
-    border-bottom: 1px solid rgb(221, 216, 216);
-}
-
-.row {
+.row,
+.navbar li,
+.content-info ul,
+.tools,
+.btn {
     display: flex;
 }
 
-section {
-    padding: 14px 22px;
-}
-
-aside {
-    padding: 20px 18px;
-    padding-left: 7px;
+.container {
+    border-bottom: 1px solid rgb(221, 216, 216);
 }
 
 .header {
@@ -45,6 +40,19 @@ aside {
     font-size: 18px;
 }
 
+section {
+    width: 100%;
+    padding: 14px 22px;
+}
+
+aside {
+    padding: 20px 18px;
+    padding-left: 7px;
+}
+
+
+/* <<<====== Navbar start ======>>> */
+
 .navbar {
     width: 380px;
     border-left: 1px solid rgb(221, 216, 216);
@@ -52,9 +60,7 @@ aside {
 
 .navbar li {
     margin-bottom: 47px;
-    display: flex;
     align-items: flex-start;
-    font-weight: bold;
 }
 
 .navbar li:first-child {
@@ -70,12 +76,13 @@ aside {
     margin-right: 13px;
 }
 
-section {
-    width: 100%;
-}
+
+/* <<<====== Navbar end ======>>> */
+
+
+/* <<<====== Tools start ======>>> */
 
 .tools {
-    display: flex;
     justify-content: space-between;
 }
 
@@ -96,8 +103,8 @@ section {
     background-color: #f5f5f5;
     box-shadow: 1px 1px 0px 0px #b6a9a9, 15px 6px 20px #fff;
     border-radius: 4px;
-    outline: none;
     border: 1px solid rgb(224, 208, 208);
+    outline: none;
 }
 
 .tool .info {
@@ -121,10 +128,67 @@ section {
     box-shadow: 1px 1px 0px 0px #b6a9a9, 15px 6px 20px #fff;
 }
 
+
+/* <<<====== Tools end ======>>> */
+
+
+/* <<<====== Content start ======>>> */
+
+.contents {
+    padding: 15px 0;
+}
+
 .content {
     display: grid;
     grid-template-columns: auto auto auto;
 }
+
+
+/* <<<====== Content-info start ======>>> */
+
+.content-info {
+    padding-top: 5px;
+    padding-bottom: 12px;
+}
+
+.content-info ul {
+    margin-left: 3px;
+}
+
+.content-info ul li:first-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px
+}
+
+.content-info ul li:last-child {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px
+}
+
+.content-info ul li {
+    width: 100%;
+    text-align: center;
+    padding-top: 17px;
+    padding-bottom: 25px;
+    border: 1px solid #e5f2fa;
+    background-color: #f0f9ff;
+}
+
+.content-info ul li span {
+    font-size: 34px;
+}
+
+.content-info ul li p {
+    font-size: 15px;
+    letter-spacing: -1px;
+    line-height: 11px;
+}
+
+
+/* <<<====== Content-info end ======>>> */
+
+
+/* <<<====== Content-item start ======>>> */
 
 .content-item {
     background-color: rgba(255, 255, 255, 0.8);
@@ -143,7 +207,7 @@ section {
     transition: all ease-out .3s;
 }
 
-.color {
+.image {
     height: 165px;
 }
 
@@ -178,25 +242,21 @@ section {
 }
 
 .desc p {
+    font-size: 16px;
+    letter-spacing: -1px;
     padding: 5px 0;
 }
 
-.desc p {
-    font-size: 16px;
-    letter-spacing: -1px;
-}
-
 .btn {
-    height: 24px;
     width: 85px;
+    height: 24px;
+    font-size: 13px;
     margin-left: 10px;
     margin-top: 8px;
     background-color: #00bc40;
     border-radius: 5px;
-    font-size: 13px;
-    align-items: center;
-    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .btn span {
@@ -208,53 +268,16 @@ section {
     justify-content: start;
 }
 
-.progress {
+.in-progres::before {
+    content: ' ';
     width: 10px;
     height: 100%;
-    border-radius: 3px;
+    border-radius: 5px;
     background-color: #00bc40;
 }
 
-.content-info ul {
-    display: flex;
-    margin-left: 3px;
-}
 
-.content-info ul li:first-child {
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px
-}
+/* <<<====== Content-item end ======>>> */
 
-.content-info ul li:last-child {
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px
-}
 
-.content-info ul li {
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    padding-top: 17px;
-    padding-bottom: 25px;
-    border: 1px solid #e5f2fa;
-    background-color: #f0f9ff;
-}
-
-.content-info ul li span {
-    font-size: 34px;
-}
-
-.content-info ul li p {
-    font-size: 15px;
-    letter-spacing: -1px;
-    line-height: 11px;
-}
-
-.contents {
-    padding: 15px 0;
-}
-
-.content-info {
-    padding-top: 5px;
-    padding-bottom: 12px;
-}
+/* <<<====== Content end ======>>> */
